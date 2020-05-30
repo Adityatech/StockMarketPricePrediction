@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<link href="{{ url_for('static', filename='css/form3.css') }}" rel="stylesheet">
+
+
+<div>
+    <div>
+    <h4 style="font-size: 35px;margin-left: 437px;padding-bottom: 8px;">Enter Company Name</h4>
+    <form action="/predict" method="post" class="search-wrapper cf">
+        <input type="text" name="name" class="input-text"  placeholder="eg:ibm" required style="box-shadow: none; font-size: 20px;">
+        <button type="submit">Predict!</button>
+    </form>
+    </div>
+
+
+</div>
+
+{% endblock %}

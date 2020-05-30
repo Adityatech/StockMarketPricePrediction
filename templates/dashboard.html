@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+
+
+<img src="{{ url_for('static', filename=filename) }}" alt="User Image" width="900" height="700"
+style="margin-right: -1px;float: right;margin-top: -150px;">
+    <div id="result">
+        <h4 class="font-weight-bold" style="padding-top: 27px;padding-bottom: 76px;">Predicted Closing :<br>{{closing}}</h4>
+        <h4 class="font-weight-bold" style="padding-bottom: 76px;">Stoploss :<br>{{sell}}</h4>
+    </div>
+{% endblock %}
